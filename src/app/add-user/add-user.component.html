@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-md-offset-2 col-sm-offset-1">
+      <form (ngSubmit)="onSubmit();" [formGroup]="SignupForm" name="SignupForm" >
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control"
+            id="name" formControlName = "name">
+        </div>
+                <br>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" 
+            id="email" formControlName = "email">
+        </div>
+        <button type="submit" class="btn btn-sm btn-primary">Add</button>
+      </form>
+    </div>
+  </div>
+</div>
